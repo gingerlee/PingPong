@@ -3,23 +3,35 @@ $(document).ready(function() {
   $("button").click(function(event) {
     prompt("Enter a number between 1 and 100!");
 
-   var pingpong = function () {
-      var i, list;
-      for (i = 1; i <= 101; i += 1) {
-        var list = '';
+   var reveal = document.getElementById("reveal");
 
-        if (i % 15 == 0) {
-          list += 'PongPong'; }
+      var revealItems = "";
 
-        if (i % 3 == 0) {
-          list += 'Ping'; }
+      var i;
 
-        if (i % 5 == 0) {
-          list += 'Pong'; }
+      for (i = 1; i < 101; i = i + 1) {
 
-        if (list == '') {
-          list += i; } 
+        revealItems += "<li>";
+
+        if ((i % 3 === 0) && (i % 5 ===0))
+        {
+          revealItems += "PongPong";
+        }
+        else if (i % 3 === 0) {
+          revealItems += "Ping";
+        }
+        else if (i % 5 === 0) {
+          revealItems += "Pong";
+        }
+        else {
+          revealItems += i;
+        }
+        revealItems += "</li>";
+      }
+
+      $("#reveal").show(revealItems);
 
     event.preventDefault();
+
   });
 });
