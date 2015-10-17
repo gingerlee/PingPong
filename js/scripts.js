@@ -1,35 +1,36 @@
 $(document).ready(function() {
 
-  $("button").click(function(event) {
+  $("button.btn").click(function(event) {
     prompt("Enter a number between 1 and 100!");
 
-   var reveal = document.getElementById("reveal");
-
-      var revealItems = "";
+      var listItems = "";
 
       var i;
 
       for (i = 1; i < 101; i = i + 1) {
 
-        revealItems += "<li>";
+        listItems += "<li>";
 
-        if ((i % 3 === 0) && (i % 5 ===0))
-        {
-          revealItems += "PongPong";
+        if ((i % 3 === 0) && (i % 5 ===0)) {
+          listItems += "PongPong";
         }
+
         else if (i % 3 === 0) {
-          revealItems += "Ping";
+          listItems += "Ping";
         }
+
         else if (i % 5 === 0) {
-          revealItems += "Pong";
+          listItems += "Pong";
         }
+
         else {
-          revealItems += i;
+          listItems += i;
         }
-        revealItems += "</li>";
+
+        listItems += "</li>";
       }
 
-      $("#reveal").show(revealItems);
+      $("#answer").show();
 
     event.preventDefault();
 
