@@ -9,7 +9,10 @@ This is my 4th code review for the Epicodus Introduction to Programming Summer/F
 ## Setup
 View my project files by cloning this repository:
 ```sh
-https://github.com/gingerlee/pingpong.git 
+https://github.com/gingerlee/pingpong.git
+```
+```sh
+https://github.com/gingerlee/pingpong
 ```
 
 ## Technologies Used
