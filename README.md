@@ -11,9 +11,9 @@ View my project files by cloning this repository:
 ```sh
 https://github.com/gingerlee/pingpong.git
 ```
-
+Or view live project here:
 ```sh
-https://github.com/gingerlee/pingpong
+http://gingerlee.github.io/PingPong/
 ```
 
 ## Technologies Used
