@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("button.btn").click(function(event) {
+  $("form").submit(function(event) {
     event.preventDefault();
     prompt("Enter a number between 1 and 100!");
       var listItems = [];

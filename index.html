@@ -14,12 +14,18 @@
       <div class="jumbotron">
         <h1>Ping Pong, Game On</h1>
       </div>
-      <p>Ready to play?! Click the button below:</p>
-      <br>
-      <button type="submit" class="btn">Play</button>
+      <div class="body">
+        <p>Ready to play?!</p>
+        <form class="enter-number" action="index.html" method="post">
+          <label for="number">Enter a number from 1-100 below:</label>
+          <input type="text" name="entry-number" value="">
+          <button type="submit" name="button">Submit</button>
+        </form>
+
+        <ul id="answer">
+        </ul>
       </div>
-          <ul id="answer">
-          </ul>
+
       </div>
   </body>
 </html>
