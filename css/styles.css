@@ -1,3 +1,8 @@
 #answer {
   display: none;
 }
+
+.jumbotron {
+  background: url("../img/pingpong.gif") no-repeat;
+
+}
