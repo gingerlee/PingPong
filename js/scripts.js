@@ -28,6 +28,6 @@ $(document).ready(function() {
     var input = parseInt($("input").val());
     var result = pingPong(input);
     $("#answer").show();
-    $(".ping-list").append("<li>" + result + "</li>");
+    $(".ping-list").append(result + ", ");
   });
 });
