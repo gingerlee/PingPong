@@ -1,23 +1,32 @@
+// Business Logic
+var pingPong = function(input) {
+  if (isNaN(input) === true || input < 1) {
+    return alert("Please enter a number.");
+  }
+  var pingList = [];
+  for (var index = 1; index <= input; index++) {
+    if ((index % 3 === 0) && (index % 5 === 0)) {
+      pingList.push("pongpong");
+    }
+    else if (index % 3 === 0) {
+      pingList.push("ping");
+    }
+    else if (index % 5 === 0) {
+      pingList.push("pong");
+    }
+    else {
+      pingList.push(index);
+    }
+  }
+}
+
+// User-Interface Logic
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
-    prompt("Enter a number between 1 and 100!");
-      var listItems = [];
-      for (var index = 1; index <= 100; index++) {
-        if ((i % 3 === 0) && (i % 5 ===0)) {
-          return index = "pongpong";
-        }
-        else if (i % 3 === 0) {
-          return index = "ping";
-        }
-        else if (i % 5 === 0) {
-          return index = "pong";
-        }
-        else {
-          return listItems.push(index);
-          debugger;
-        }
-      }
-      $("#answer").show();
+    var input = parseInt($("input").val());
+    var result = pingPong(input);
+    $("#answer").show();
+    $(".ping-list").text(result);
   });
 });
