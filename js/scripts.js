@@ -6,7 +6,7 @@ var pingPong = function(input) {
   var pingList = [];
   for (var index = 1; index <= input; index++) {
     if ((index % 3 === 0) && (index % 5 === 0)) {
-      pingList.push("pongpong");
+      pingList.push("pong-pong");
     }
     else if (index % 3 === 0) {
       pingList.push("ping");
@@ -18,6 +18,7 @@ var pingPong = function(input) {
       pingList.push(index);
     }
   }
+  return pingList;
 }
 
 // User-Interface Logic
